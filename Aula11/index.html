@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="cadas">Cadastro Do Usuario</h1>
+        <div class="FC" id="formulario">
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="Nome">Nome</label>
+                <div class="col-10">
+                <input class="form-control" type="text" id="nome" placeholder="Nome completo" name="Nome completo">
+            </div>
+            </div>
+            <p></p>
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="E-mail">E-mail</label>
+                <div class="col-10">
+                <input class="form-control" type="text" id="email" placeholder="E-mail" name="E-mail">
+            </div>
+            </div>
+            <p></p>
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="Senha">Senha</label>
+                <div class="col-10">
+                <input class="form-control" type="password" id="senha" placeholder="Senha" name="Senha">
+            </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Nasc"></label>
+                        <input class="form-control" type="date" id="nasc" placeholder="Nascimento">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Estado"></label>
+                <select id="estado" aria-placeholder="UF" class="form-control">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                </select>
+            </div>
+                </div>
+            
+            
+</div>
+    <p></p>
+        <div class="Botao">
+            <button type="submit" onclick="Salvar()" class="btn btn-primary">Salvar</button>
+            <button class="btn btn-primary">Editar</button>
+        </div>
+        <div id="tabular">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Nascimento</th>
+                    <th scope="col">UF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gabriel Cardoso</td>
+                    <td>gabrielcardosok04@gmail.com</td>
+                    <td>31/12/2002</td>
+                    <td>PR</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        </div>
+    </div>
+
+        <script src="index.js"></script>
+</body>
+</html>
